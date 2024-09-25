@@ -3,9 +3,13 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type {Config} from 'jest';
+import type { Config } from 'jest';
 
 const config: Config = {
+
+  
+  testEnvironment: 'node',
+
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -13,19 +17,19 @@ const config: Config = {
   // bail: 0,
 
   // The directory where Jest should store its cached dependency information
-  // cacheDirectory: "/tmp/jest_rs",
+  // cacheDirectory: "/tmp/jest_ru",
 
   // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  collectCoverage: true,
+  collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: './coverage/',
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -78,6 +82,7 @@ const config: Config = {
   // ],
 
   // An array of file extensions your modules use
+  moduleFileExtensions: ['ts', 'js'],
   // moduleFileExtensions: [
   //   "js",
   //   "mjs",
@@ -126,9 +131,10 @@ const config: Config = {
   // rootDir: undefined,
 
   // A list of paths to directories that Jest should use to search for files in
-  // roots: [
-  //   "<rootDir>"
-  // ],
+  roots: [
+    "./test",
+    "./src",
+  ],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -166,6 +172,8 @@ const config: Config = {
   // ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
+  // testRegex: '(/test/.*\\.(test|spec))\\.(jsx?|tsx?)$',
+  testRegex: '(/.*\\.(test|spec))\\.(jsx?|tsx?)$',
   // testRegex: [],
 
   // This option allows the use of a custom results processor
@@ -175,6 +183,9 @@ const config: Config = {
   // testRunner: "jest-circus/runner",
 
   // A map from regular expressions to paths to transformers
+  transform: {
+    '^.+\\.(ts|tsx)$': ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+  },
   // transform: undefined,
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
