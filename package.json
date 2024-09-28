@@ -1,6 +1,6 @@
 {
   "name": "@klawdyo/social",
-  "version": "0.0.0-h",
+  "version": "0.0.0-i",
   "main": "dist/src/main.js", 
   "types": "dist/src/main.d.ts", 
   "module": "dist/src/main.js", 
