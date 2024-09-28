@@ -1,10 +1,11 @@
 {
   "name": "@klawdyo/social",
-  "version": "0.0.0-e",
-  "main": "dist/src/main",
-  "files": [
-    "dist/**"
-  ],
+  "version": "0.0.0-f",
+  "main": "dist/src/main.js", 
+  "types": "dist/src/main.d.ts", 
+  "module": "dist/src/main.js", 
+  "source": "src", 
+
   "scripts": {
     "build": "jest && tsc",
     "test": "jest --coverage",
