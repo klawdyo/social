@@ -1,6 +1,6 @@
 {
   "name": "@klawdyo/social",
-  "version": "0.0.0-c",
+  "version": "0.0.0-d",
   "main": "src/main",
   "files": [
     "src/**"
