@@ -7,7 +7,7 @@ import { TikTok } from "tiktok";
 import { X } from "x";
 import { YoutubeChannel } from "youtube-channel";
 
-export default {
+export {
   Facebook,
   Instagram,
   LinkedIn,
