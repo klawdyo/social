@@ -1,9 +1,9 @@
 {
   "name": "@klawdyo/social",
-  "version": "0.0.0-d",
-  "main": "src/main",
+  "version": "0.0.0-e",
+  "main": "dist/src/main",
   "files": [
-    "src/**"
+    "dist/**"
   ],
   "scripts": {
     "build": "jest && tsc",
