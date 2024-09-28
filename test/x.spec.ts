@@ -1,4 +1,4 @@
-import { X } from './x';
+import { X } from '../src/x';
 
 describe('X Class', () => {
     test('Deve aceitar username válido diretamente', () => {

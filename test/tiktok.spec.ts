@@ -1,4 +1,4 @@
-import { TikTok } from './tiktok';
+import { TikTok } from '../src/tiktok';
 
 describe('TikTok Class', () => {
     test('Deve aceitar username válido diretamente', () => {

@@ -1,4 +1,4 @@
-import { LinkedIn } from './linkedin';
+import { LinkedIn } from '../src/linkedin';
 
 describe('LinkedIn Class', () => {
     test('Deve aceitar username válido diretamente', () => {

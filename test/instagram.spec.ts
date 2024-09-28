@@ -1,4 +1,4 @@
-import {Instagram} from './instagram'
+import {Instagram} from '../src/instagram'
 
 describe('Instagram Class', () => {
     test.each([

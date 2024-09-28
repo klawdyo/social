@@ -1,4 +1,4 @@
-import { Threads } from './threads';
+import { Threads } from '../src/threads';
 
 describe('Threads Class', () => {
     test('Deve aceitar username válido diretamente', () => {

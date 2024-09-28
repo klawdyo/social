@@ -1,4 +1,4 @@
-import {Facebook} from './facebook'
+import {Facebook} from '../src/facebook'
 
 describe('Facebook Class', () => {
     test.each([

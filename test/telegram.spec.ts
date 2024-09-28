@@ -1,4 +1,4 @@
-import { Telegram } from './telegram';
+import { Telegram } from '../src/telegram';
 
 describe('Telegram Class', () => {
     test('Deve aceitar username válido diretamente', () => {

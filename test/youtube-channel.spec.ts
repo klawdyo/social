@@ -1,5 +1,5 @@
 
-import { YoutubeChannel } from './youtube-channel'
+import { YoutubeChannel } from '../src/youtube-channel'
 describe('YoutubeChannel Class', () => {
   test.each([
     'validusername',
